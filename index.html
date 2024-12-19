@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div class="goToTop">
+        <a href="#intro">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="18px" height="18px">
+            <path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </div>
+    <header id="header">
+<input type="checkbox" id="gnbcheck" name="gnbcheck">
+<label for="gnbcheck" id="gnbbtn">
+            <span></span><span></span><span></span>
+        </label>
+        <h1 id="top-logo">
+            <a href="/index.html">portfolio</a>
+        </h1>
+        <nav id="gnb">
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#myskill">MySkill</a></li>
+                <li><a href="#mytool">MyTool</a></li>
+                <li><a href="#myproject">Aspiration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="intro">
+        <article>
+            <h2>About my company</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo non voluptatibus ab amet quo cumque error nulla asperiores corrupti temporibus?</p>
+            <a href="#myprofile" class="button">go to profile</a>
+        </article>
+    </section>
+    <section id="portfolio">
+        <div class="row">
+            <h2>Portfolio</h2>
+            <div class="column">
+                <div class="inner border-none-type">
+                    <img src="./img/profile/nice.png" alt="img01" class="shadow">
+                    <h3>나이스 지키미</h3>
+                    <p>
+                        <strong>작업참여도 :</strong>100% <br>
+                        <strong>제작 페이지지 :</strong>메인페이지,서브페이지,로그인,회원가입 고객센터<br>키워주는 신용생활/사장님 신용관리, 신용회복케어, 신용 보고서<br>
+                        <strong>설명 : 본래 페이지의 서브페이지 내, 하단 버튼의 높이값만큼의 오류가 발생 <br> 하단부터 ScrollTop을 계산하도록 수식을 세워 수정함</strong><br>
+                        <a href="./nice/index.html">My site</a> <a href="#">Code</a>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="inner border-none-type">
+                    <img src="./img/profile/U2C.png" alt="img02" class="shadow">
+                    <h3>U2CLab</h3>
+                    <p>
+                        <strong>작업참여도 :</strong>100% <br>
+                        <strong>제작 페이지지 :</strong>메인페이지<br>
+                        <strong>설명 : 본래 페이지의 2번째 section에서 마우스 기능 오류/2024-12-15 일부 수정된 것 확인됨<br>
+                            마우스가 커스텀 디자인 되어있으나 기능이 발생하는 영역 외에서도 확인되어 사용자의 착각을 일으킬 수 있음<br> 기능이 작동하는 곳에 한정하여 마우스 커스텀 이벤트 발생하도록 수정
+                        </strong><br>
+                        <a href="./u2clab/index.html">My site</a> <a href="#">Code</a>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="inner border-none-type">
+                    <img src="./img/profile/plan.png" alt="img03" class="shadow">
+                    <h3>기획문서</h3>
+                    <p>
+                        <strong>작업참여도 :</strong>100% <br>
+                        <strong>제작 페이지지 :</strong>메인페이지 / 제품 페이지<br>
+                        <strong>설명 : 제이콥의 법칙에 따라 직관적이고 플랫한 디자인 위주로 구성.<br>
+                            전체적으로 선택 가능한 영역에 hover 효과를 주어 
+                        <a href="./Planned/index.html">My site</a> <a href="#">Code</a><a href="./Planned/진준구_스토리보드.pptx">Story Board</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="myskill">
+        <div class="row">
+            <h2>My Skill</h2>
+            <div class="column">
+                <div class="inner border-none-type progressbar">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur odio nostrum iure aliquam delectus accusamus quisquam nam harum quas beatae.</p>
+                    <div class="items-wrap">
+                        <div class="item">
+                            <div class="title">HTML5</div>
+                            <div class="percent">70%</div>
+                        </div></div>
+                        <div class="items-wrap">
+                        <div class="item">
+                            <div class="title">css3</div>
+                            <div class="percent">70%</div>
+                        </div>
+                    </div>
+                        <div class="items-wrap">
+                        <div class="item">
+                            <div class="title">javascript</div>
+                            <div class="percent">70%</div>
+                        </div>
+                    </div>
+                        <div class="items-wrap">
+                        <div class="item">
+                            <div class="title">jquery</div>
+                            <div class="percent">60%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="mytool">        <div class="row">
+        <h2>Mytool</h2>
+        <div class="column">
+            <div class="inner border-none-type">
+                <img src="./img/mytool/img01.png" alt="img01">
+                <h3>HTML</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eveniet nisi mollitia explicabo nemo quos laudantium sed quam iusto cumque.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="inner border-none-type">
+                <img src="./img/mytool/img02.png" alt="img02">
+                <h3>CSS</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eveniet nisi mollitia explicabo nemo quos laudantium sed quam iusto cumque.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="inner border-none-type">
+                <img src="./img/mytool/img03.png" alt="img03">
+                <h3>JAVAScript</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eveniet nisi mollitia explicabo nemo quos laudantium sed quam iusto cumque.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="inner border-none-type">
+                <img src="./img/mytool/Jquery.png" alt="img04" style="transform: scale(90%);">
+                <h3>Jquery</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eveniet nisi mollitia explicabo nemo quos laudantium sed quam iusto cumque.
+                </p>
+            </div>
+        </div>
+    </div></section>
+    <section id="myproject">
+        <article>
+            <h2></h2>
+            <p>꿈은 도망가지 않는다. 도망가는 것은 언제나 자기 자신이다.</p>
+            <!-- <a href="#myprofile" class="button">go to profile</a> -->
+        </article>
+    </section>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="column f-logo">
+                        <h3>Portfolio</h3>
+                    </div>
+                    <div class="column" id="site-map">
+                        <h4>site map</h4>
+                        <ul>
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#myskill">MySkill</a></li>
+                            <li><a href="#mytool">MyTool</a></li>
+                            <li><a href="#myproject">Aspiration</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>contect</h4>
+                            <strong>phone: </strong><a href="tel:+82-010-0000-0000">+82-010-7507-8373</a><br>
+                            <strong>e-mail: </strong><a href="mailto:mymail@naver.com">gch03216@naver.com</a>
+                        </p>
+                    </div>
+                    <div class="column news">
+                        <h4>NEWS</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas adipisci ducimus fugit nihil, veritatis doloremque laborum, corporis magni dolores accusamus doloribus! Repellendus exercitationem velit quas vel totam, voluptas qui fuga.</p>
+                    <form action="">
+                        <input type="search" name="search"><input type="submit" value="search">
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">2024 &copy;copyright <strong>mtpage</strong>.All Rights Reserved.</div>
+            <div class="credit">
+                Designed By <a href="mailto:gch03216@naver.com">진준구</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
