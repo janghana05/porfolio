@@ -3,7 +3,7 @@
 /* common ui */
 /* button style */
 body {
-    background-image: url(../img/christmas.jpg);
+    background-image: url(../img/Christmas.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -19,11 +19,11 @@ body {
     line-height: 32px;
     padding: 8px 32px;
     border-radius: 24px;
-    background-color: #18d26e;
+    background-color: darkred;
 }
 
 .button:hover {
-    color: #18d26e;
+    color: darkred;
     background-color: #ffffff;
     text-shadow: none;
 }
@@ -210,7 +210,7 @@ section#portfolio .row .column a {
 }
 section#portfolio .row .column a:hover {
     border: 1px solid white;
-    background-color: #18d26e;
+    background-color: darkred;
     color: white;
     filter: drop-shadow(0px 0 5px rgb(163, 163, 163));
 }
@@ -331,7 +331,7 @@ section .row>h2:before {
 
 section .row>h2:after {
     left: calc(50% - 20px);
-    background-color: #18d26e;
+    background-color: darkred;
     width: 40px;
     height: 3px;
     bottom: 0px;
@@ -399,7 +399,7 @@ margin: 0 0 20px 0;
 line-height: 1;
 font-weight: 700;
 letter-spacing: 3px;
-border-left: 4px solid #18d26e;
+border-left: 4px solid darkred;
 color: #ffffff;
 }
 #footer .container .row .column h4 {
@@ -421,7 +421,7 @@ color: #ffffff;
 }
 #footer .container .row .column h4::before {
     width: 60px;
-    background-color: #18d26e;
+    background-color: darkred;
 }
 #footer .container .row .column ul li {
     padding: 10px 0;
@@ -443,7 +443,7 @@ padding: 6px 0;
 text-align: center;
 color: #ffffff;
 cursor: pointer;
-background-color: #18d26e;
+background-color: darkred;
 }
 @media screen and (max-width: 1200px) {
     section .row .column {
