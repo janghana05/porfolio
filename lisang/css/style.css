@@ -1,0 +1,792 @@
+@charset "UTF-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+:root {
+    --primary-font-color: #222222;
+}
+/* 공통 부분 */
+a {color: var(--primary-font-color);}
+body {
+    width: 100%;
+    font-family: 'NanumSquare';
+}
+#main-nav-bar {
+    width: 100%;
+    height: 95px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    z-index: 10000;
+}
+#main-nav {
+    width: 27%;
+    display: flex;
+    padding-left: 50px;
+    line-height: 95px;
+}
+#main-nav li {
+margin-right: 40px;
+font-size: 17px;
+color: #222222;
+}
+#main-logo {
+    width: 7%;
+    margin-left: -350px;
+    margin-top: 20px;
+}
+#main-logo a img {
+    width: 100%;
+}
+#sub-nav {
+    display: flex;
+    padding-right: 10px;
+    line-height: 95px;
+}
+#sub-nav li {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 25px;
+    color: #222222;
+}
+.main-h2 {
+    font-size: 36px;
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+}
+.main-p {
+    width: 100%;
+    height: 28px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-font-color);
+    text-align: center;
+}
+.product-btn {
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    border-radius: 40px;
+}
+#footer {
+    height: 480px;
+    background-image: url(../img/footer/footer_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+}
+#footer img {
+    width: 114px;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#footer p {
+    font-size: 14px;
+    line-height: 30px; 
+}
+#footer_wrap_l {
+    width: 45%;
+    padding-left: 200px;
+}
+#footer_wrap_l p:last-child {
+    margin-top: 8px;
+    color: #ffffff80;
+}
+#footer_wrap_r {
+    width: 55%;
+    padding-top: 180px;
+}
+#footer_wrap_r p:last-child {
+    margin-top: 35px;
+    font-size: 13px;
+}
+#footer ul {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+#footer ul li a {
+    color: #ffffff;
+}
+#main_fixed ul {
+    width: 160px;
+    position: fixed;
+    right: 25px;
+    bottom: 80px;
+}
+#main_fixed ul li {
+    width: 100%;
+    margin-bottom: 5px;
+}
+#main_fixed ul li a img {
+    width: 100%;
+}
+
+/* 메인 페이지 */
+#main-slide {
+    width: 100%;
+    height: 590px;
+    background-image: url(../img/main_page/main_slide/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+}
+#main-slide-nav {
+    width: 8%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#main-slide-nav li {
+    width: 12%;
+    height: 2px;
+    gap: 10px;
+    background-color: rgba(225, 225, 225, 0.4);
+}
+#main-slide-nav li:nth-child(1){
+    background-color: #fff;
+}
+#main-product1 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+#main-product1 h2 {
+    color: var(--primary-font-color);
+    padding-top: 64px;
+}
+#main-product1 > p {
+    color: var(--primary-font-color);
+    padding-top: 20px;
+}
+#main-product1 ul {
+    display: flex;
+    width: 80%;
+    height: 440px;
+    margin: auto;
+    margin-top: 20px;
+}
+#main-product1 ul li{
+    width: 25%;
+    margin: 0 5px;
+    color: var(--primary-font-color);
+}
+#main-product1 ul li a img {
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+#main-product1 ul li a p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'NanumSquare';
+    text-align: left;
+    margin-top: 14px;
+    color: var(--primary-font-color);
+}
+#product1-wrap {
+    width: 78%;
+    height: 80px;
+    z-index: 999;
+    position: absolute;
+    left: 11%;
+    top: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+.product1-btn {
+    border: 1px solid var(--primary-font-color);
+    color: var(--primary-font-color);
+}
+#main_banner{
+    width: 100%;
+    height: 70px;
+    border-top: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+    overflow: hidden;
+}
+#main_banner p{
+    font-size: 22px;
+    font-family: 'NanumSquare';
+    line-height: 70px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 100px;
+}
+#main-product2 {
+    width: 100%;
+    height: 760px;
+    position: relative;
+}
+#main-product2 h2 {
+    padding-top: 64px;
+}
+#main-product2 p {
+    margin-top: 15px;
+}
+#main-product2 ul {
+    width: 100%;
+    height: 490px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#main-product2 ul li {
+    width: 490px;
+    height: 490px;
+    margin-left: 12px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+#main-product2 ul li a img {
+    width: 100%;
+    background-size: cover;
+}
+#product2-wrap {
+    width: 78%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 400px;
+    z-index: 9999;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.product2-btn {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+
+/* 브랜드페이지 */
+.brand {
+    width: 100%;
+    height: 703px;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'NanumSquare';
+}
+
+.brand img {
+    width: 50%;
+}
+.brand_wrap {
+    width: 50%;
+    height: 100%;
+}
+.brand_wrap h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-top: 170px;
+}
+.brand:nth-child(3) .brand_wrap h3 {
+    margin-left: 0;
+}
+.brand:nth-child(3) .brand_wrap p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.brand_wrap > p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 150px;
+    line-height: 30px;
+}
+.brand:nth-child(3) {
+    flex-direction: row-reverse;
+}
+.brand:nth-child(3) .brand_wrap {
+    text-align: right;
+}
+#brand_inner {
+    width: 100%;
+    height: 100%;
+    margin-left: 150px;
+    text-align: left;
+    display: inline-block;
+}
+
+.brand:nth-child(4) {
+    border: none;
+}
+.brand:nth-child(4) .brand_wrap ul{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 45px;
+}
+.brand:nth-child(4) .brand_wrap ul li {
+    width: 210px;
+    height: 165px;
+    background-color: #fff;
+}
+.brand:nth-child(4) .brand_wrap ul li h4 {
+    font-size: 22px;
+}
+.brand:nth-child(4) .brand_wrap ul li img {
+    width: 57px;
+    height: 6px;
+    margin-top: 15px;
+}
+.brand:nth-child(4) .brand_wrap ul li p {
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+.sub_slide {
+    width: 100%;
+    height: 470px;
+    overflow: hidden;
+    color: var(--primary-font-color);
+    text-align: center;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+
+
+/* 프로그램 페이지 */
+.product_slide {
+    background-color: #fdb67e;
+}
+.program {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.program:nth-child(3) {
+    height: 545px;
+    justify-content: center;
+    align-items: center;
+}
+.program:nth-child(5) {
+    height: 625px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.program:nth-child(7) {
+    height: 750px;
+    justify-content: start;
+    align-items: center;
+}
+.program_wrap {
+    height: 80%;
+    margin-top: 120px;
+    margin-right: 70px;
+}
+.program_wrap h3 {
+    padding: 10px 24px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #fdb67e;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.program_wrap:nth-child(1) h3 {
+    width: 164px;
+    height: 50px;
+}
+.program_wrap:nth-child(2) h3 {
+    width: 128px;
+    height: 50px;
+}
+.program_wrap:nth-child(3) h3 {
+    width: 146px;
+    height: 50px;
+}
+
+.program_wrap > p {
+    font-size: 16px;
+    color: var(--primary-font-color);
+    line-height: 28px;
+}
+.program_button {
+    width: 48px;
+    height: 48px;
+    margin-top: 32px;
+    border-radius: 24px;
+    border: 1.5px solid #000;
+}
+.program a {
+    width: 480px;
+    background-color: #fff;
+    display: block;
+    margin-right: 10px;
+    border: 1px solid var(--primary-font-color);
+    box-sizing: border-box;
+}
+.program a img {
+    width: 100%;
+    height: 369px;
+}
+.program a p {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+}
+.program a:nth-child(2) p {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.program a:nth-child(3) p {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.program a p:nth-child(3) {
+    color: #22222299;
+    font-size: 15px;
+    margin-bottom: 10px;
+} 
+hr {
+    width: 1500px;
+    height: 1px;
+    background-color: var(--primary-font-color);
+    border: none;
+    margin: auto;
+}
+
+
+/* 스토리 페이지 */
+.story_slide {
+    background-color: #e7c1f8;
+}
+.sub_slide h2 {
+    padding-top: 130px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.sub_slide h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.sub_slide hr {
+    width: 75px;
+    margin: auto;
+    background-color: var(--primary-font-color);
+    border: 0;
+}
+.sub_slide p {
+    margin-top: 25px;
+    font-size: 18px;
+}
+.story_slide hr {
+    margin-top: 30px;
+}
+#story_nav {
+    width: 100%;
+    height: 280px;
+}
+#story_nav ul {
+    width: 25%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+    align-items: center;
+    padding-top: 130px;
+}
+#story_nav ul li {
+    font-size: 16px;
+}
+#story_nav ul li:hover {
+    padding: 4px 15px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 20px;
+}
+#story_nav ul li:hover a{
+    color: #ffffff;
+}
+#story_wrap {
+    width: 100%;
+    height: 1630px;
+    overflow: hidden;
+}
+#story_wrap h2 {
+    width: 80%;
+    font-size: 30px;
+    margin-left: 10%;
+}
+#story_wrap ul {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#story_wrap ul li {
+    width: 488px;
+    border: 1px solid #000;
+   background-color: #fff;
+}
+#story_wrap ul li a {
+    display: block;
+}
+#story_wrap ul li a img {
+    width: 100%;
+    height: 369px;
+}
+#story_wrap ul li a p {
+    font-size: 17px;
+    margin-left: 20px;
+}
+#story_wrap ul:nth-child(2) li a p {
+    padding-bottom: 20px;
+}
+#story_wrap ul li a p:nth-child(2) {
+    margin-top: 20px;
+}
+#story_wrap ul li a p:nth-child(3) {
+    font-size: 14px;
+    color: #22222299;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+
+/* 아이템 페이지 */
+.item_slide {
+    background-color: #7dc384;
+}
+#item-content {
+    width: 100%;
+    height: 1195px;
+    padding: 100px 0;
+}
+.item-inner {
+    width: 80%;
+    margin: 0 auto;
+}
+#item-content ul {
+    width: 100%;
+    height: 580px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+#item-content ul li {
+    width: calc(100% / 3);
+}
+#item-content ul li a {
+    display: block;
+}
+#item-content ul li a img {
+    width: 100%;
+    border: 1px solid #000;
+}
+#item-content ul li a p {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 14px;
+}
+
+/* 콘텍트 페이지 */
+#contact {
+    width: 100%;
+    height: 1350px;
+    text-align: center;
+}
+#contact-text {
+    width: 800px;
+    color: #222222;
+    margin: auto;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#contact-text p:nth-child(1) {
+    font-size: 36px;
+    font-weight: 700;
+}
+#contact-text p:nth-child(2) {
+    font-size: 18px;
+    margin-top: 15px;
+}
+#contact-text p:nth-child(3) {
+    font-size: 18px;
+    margin-top: 15px;
+}
+#contact > p {
+    margin-top: 30px;
+    line-height: 28px;
+    color: #626262;
+}
+#contact hr {
+    width: 800px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #e5e7eb;
+}
+#contact-wrap {
+    width: 800px;
+    height: 840px;
+    background-color: rgb(117, 221, 255);
+   margin: auto;
+}
+#contact-type {
+    width: 100%;
+    height: 295px;
+    background-color: pink;
+    text-align: left;
+}
+/* 로그인페이지 */
+#login-page {
+    width: 100%;
+    height: 600px;
+}
+#login-inner {
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+#login-page h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#login-button-wrap {
+    width: 500px;
+    height: 146px;
+    margin-top: 40px ;
+}
+.login-button {
+    width: 500px;
+    height: 42px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+.login-button:nth-child(1) {
+    background-color: #27d34a;
+    border: 1px solid #27d34a;
+}
+.login-button:nth-child(2) {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.login-button:nth-child(3) {
+    background-color: #FFEB00;
+    border: 1px solid #FFEB00;
+}
+.login-button a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 42px;
+}
+.login-button a img {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 16px;
+    height: 16px;
+    margin: auto 20px;
+}
+.login-button a p {
+    font-size: 14px;
+    text-align: center;
+}
+.login-button:nth-child(1) a p {
+    color: #fff;
+}
+.login-button:nth-child(2) a p {
+    font-family: sans-serif;
+}
+#login-border-wrap {
+    width: 500px;
+    height: 29px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-border {
+    width: 200px;
+    height: 1px;
+    background-color: #e5e7eb;
+}
+#login-border-wrap p {
+    font-size: 16px;
+}
+#login-input {
+    width: 500px;
+    height: 90px;
+}
+#login-input input {
+    width: 477px;
+    height: 45px;
+    padding-left: 20px;
+    border: 1px solid #e0e0e0;
+    line-height: 12px;
+    font-size: 17px;
+}
+#login-check{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 18px;
+}
+#login-check p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+#login-button {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background-color: #fff;
+    border-radius: 21px;
+    border: 1px solid #222;
+    margin-top: 15px;
+}
+#login-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#login-footer div a {
+    font-size: 16px;
+    color: #222222;
+}

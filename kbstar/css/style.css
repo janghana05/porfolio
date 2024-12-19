@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 공통작업 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+html, body {
+    width: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+#main-logo {
+    margin-left: 30px;
+}
+#main-gnb {
+    width: 50%;
+}
+#main-gnb ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+#main-gnb ul li {
+    font-weight: 500;
+}
+#main-admin {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #705d58;
+    margin-right: 30px;
+}
+#main-admin a {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    color: #ffffff;
+    gap: 5px;
+}
+#footer-banner {
+    width: 100%;
+    height: 370px;
+    background-color: #f1eeee;
+    text-align: center;
+}
+.footer-banner-inner {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/main/apply_bg_desk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+}
+.footer-banner-inner h3 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+.footer-banner-inner h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.footer-banner-inner > p {
+    font-size: 13px;
+    color: #727272;
+    margin: 10px;
+}
+.footer-banner-button {
+    width: 153px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #ffbc00;
+    line-height: 48px;
+    font-size: 18px;
+    margin: auto;
+}
+.footer-banner-inner img {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+#main-slide {
+    width: 100%;
+    height: 825px;
+    background-color: #f1eeee;
+    text-align: center;
+    position: relative;
+}
+#main-slide h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 110px;
+}
+#main-slide p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 28px;
+}
+#main-slide-img {
+    margin: auto;
+    width: 675px;
+    height: 545px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#main-slide-img img {
+    height: 100%;
+}
+
+#content1 {
+    width: 100%;
+    height: 560px;
+    text-align: center;
+}
+#content1 h3 {
+    padding-top: 120px;
+    font-size: 28px;
+}
+#content1 p {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #945000;
+}
+#content1 ul {
+    width: 40%;
+    margin: auto;
+    display: flex;
+}
+#content1 ul li {
+    width: calc(100% / 4);
+}
+#content1 ul li img {
+    width: 80%;
+    margin: auto;
+}
+#content2 {
+    width: 100%;
+    height: 815px;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-top: 100px;
+}
+#content2 > h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+#content2-wrap {
+    width: 980px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#content2-wrap a:nth-child(1) {
+    background-image: url(../img/main/nmain_pay_desk.png);
+}
+#content2-wrap a:nth-child(2) {
+    background-image: url(../img/main/nmain_maum_desk.png);
+}
+.content2-wrap-inner {
+    display: block;
+    width: 470px;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+.content2-wrap-inner img:nth-child(1) {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+.content2-wrap-inner h3:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+.content2-wrap-inner img:nth-child(3) {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+footer {
+    width: 100%;
+    height: 130px;
+    margin-top: 80px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+    text-align: center;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li {
+    font-size: 14px;
+}
+footer img {
+    margin-top: 20px;
+}
+footer p {
+    font-size: 13px;
+    color: #727272;
+}
